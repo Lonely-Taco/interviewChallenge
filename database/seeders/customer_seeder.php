@@ -17,11 +17,12 @@ class customer_seeder extends Seeder
     public function run()
     {
         $customers = DB::table('customers')->get('id');
+        //count all the entries that are in the table
         $count = $customers->count();
 
         $json =  \Illuminate\Support\Facades\File::get("database/data/challenge.json");
         $data = json_decode($json);
-
+        //if the count is 0, seed anew
         if($count == 0){
             foreach ($data as $obj){
                 Customer::create(array(
@@ -41,8 +42,8 @@ class customer_seeder extends Seeder
             }
 
         }else{
+            //otherwise resume where it was left off. at the count form the previous iteration.
             for ($i = $count; $i < count($data); $i++ ){
-
                 Customer::create(array(
 
                     'name'=>$data[$i]->name,

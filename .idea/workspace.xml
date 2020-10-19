@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0389a887-6d33-4089-9677-d76a1aadbe99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/challenge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/data/challenge.json" beforeDir="false" afterPath="$PROJECT_DIR$/database/data/challenge.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/migrations old/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/migrations old/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/migrations old/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_15_201151_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_15_201151_create_customers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_15_203115_create_credit_cards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_15_203115_create_credit_cards_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/credit_card_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/credit_card_seeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/customer_seeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/customer_seeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,12 +176,24 @@
       <workItem from="1602862544785" duration="9226000" />
       <workItem from="1602939018788" duration="13187000" />
       <workItem from="1603023150399" duration="617000" />
-      <workItem from="1603097590297" duration="6057000" />
+      <workItem from="1603097590297" duration="6324000" />
     </task>
+    <task id="LOCAL-00001" summary="README.md">
+      <created>1603118384318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603118384318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="686" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602784967946">
@@ -200,6 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602794558481" />
+    <state x="530" y="88" key="CommitChangelistDialog2" timestamp="1603118383516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="530" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603118383516" />
     <state x="815" y="417" key="Github.ShareDialog" timestamp="1603113631949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

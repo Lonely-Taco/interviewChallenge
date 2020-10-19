@@ -22,7 +22,7 @@ class credit_card_seeder extends Seeder
         $credit_cards = DB::table('credit_cards')->get('id');
         $json =  \Illuminate\Support\Facades\File::get("database/data/challenge.json");
         $data = json_decode($json);
-
+        //count of all the entries.
         $count = $credit_cards->count();
 
         $userId = DB::table('customers')->get('id');
@@ -44,6 +44,7 @@ class credit_card_seeder extends Seeder
 
             }
         }else {
+            //otherwise resume where it was left off. at the count form the previous iteration.
             for ($j = $count; $j < $userId->count(); $j++){
                 for ($i = $count; $i < count($data); $i++ ){
                     CreditCard::create(array(
