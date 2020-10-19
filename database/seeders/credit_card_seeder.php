@@ -3,9 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\CreditCard;
-use App\Models\Customer;
-use Carbon\Carbon;
-use Faker\Factory;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
