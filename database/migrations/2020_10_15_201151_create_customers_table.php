@@ -23,7 +23,8 @@ class CreateCustomersTable extends Migration
             $table->string('date_of_birth')->nullable();
             $table->string('email');
             $table->string('account');
-            $table->timestamp();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->nullable();
 
 
         });

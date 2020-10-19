@@ -13,9 +13,10 @@ class CreateCreditCardsTable extends Migration
      */
     public function up()
     {
-        //"credit_card":{"type":"Visa","number":"4532383564703","name":"Brooks Hudson","expirationDate":"12\/19"}}
+        // make credit cards table
         Schema::create('credit_cards', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('customer_id');//customer id to go with each corresponding customer.
             $table->string('type');
             $table->string('number');
             $table->string('name');

@@ -26,6 +26,7 @@ class credit_card_seeder extends Seeder
         $count = $credit_cards->count();
 
         $userId = DB::table('customers')->get('id');
+
         if($count == 0){
             foreach ($userId as $id){
                 foreach ($data as $obj){
@@ -43,18 +44,20 @@ class credit_card_seeder extends Seeder
 
             }
         }else {
-            for ($i = $count; $i < count($data); $i++) {
+            for ($j = $count; $j < $userId->count(); $j++){
+                for ($i = $count; $i < count($data); $i++ ){
+                    CreditCard::create(array(
+                        'customer_id'=>$userId[$i]->id,
+                        'type'=>$data[$i]->credit_card->type,
+                        'number'=>$data[$i]->credit_card->number,
+                        'name'=>$data[$i]->credit_card->name,
+                        'expirationDate'=>$data[$i]->credit_card->expirationDate,
 
-                CreditCard::create(array(
+                    ));
+                    $userId[$i]->id++;
+                }
+                break;
 
-                    'customer_id' => $data[$i]->id,
-                    'type' => $data[$i]->credit_card->type,
-                    'number' => $data[$i]->credit_card->number,
-                    'name' => $data[$i]->credit_card->name,
-                    'expirationDate' => $data[$i]->credit_card->expirationDate,
-
-
-                ));
             }
         }
 
